@@ -31,27 +31,49 @@ decrement.addEventListener('click', action1);   //added a click event listenet t
 //                  - not using innerText/HTML in the right way to output
 
 
-var anumb = document.querySelector("#anum");
+var anumb = document.querySelector("#anum");   
 var bnum = document.querySelector("#bnum");
 var addn = document.querySelector("#addn");
 var subn = document.querySelector("#subn");
 var mult = document.querySelector("#mult");
 var divi = document.querySelector("#divi");
 var res = document.querySelector("#res");
-var anumber = Number(anumb.innerHTML);
-
-
-
-// subn.addEventListener('click', subtraction);
-// mult.addEventListener('click', multiply);
-// divi.addEventListener('click', division);        
 
 function addition()
 {
    
-    // var ress = parseInt(anum.innerText) + parseInt(bnum.innerText);
-    console.log(anumber)
-    // document.getElementById("res").innerText = ress;
+    var ress = parseInt(anum.value) + parseInt(bnum.value);
+    console.log(ress)
+    document.getElementById("res").value = ress;
+}
+
+
+
+function subtraction()
+{
+   
+    var ress = parseInt(anum.value) - parseInt(bnum.value);
+    console.log(ress)
+    document.getElementById("res").value = ress;
+}
+
+function multiply()
+{
+   
+    var ress = parseInt(anum.value) * parseInt(bnum.value);
+    console.log(ress)
+    document.getElementById("res").value = ress;
+}
+
+function division()
+{
+   
+    var ress = parseInt(anum.value) / parseInt(bnum.value);
+    console.log(ress)
+    document.getElementById("res").value = ress;
 }
 
 addn.addEventListener('click', addition);
+subn.addEventListener('click', subtraction);
+mult.addEventListener('click', multiply);
+divi.addEventListener('click', division); 
