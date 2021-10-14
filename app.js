@@ -31,3 +31,4 @@ decrement.addEventListener('click', action1);   //added a click event listenet t
 //                  - not using innerText/HTML in the right way to output
 
 
+//sdjfnskfhfnwhfb 
