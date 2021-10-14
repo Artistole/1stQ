@@ -38,18 +38,20 @@ var subn = document.querySelector("#subn");
 var mult = document.querySelector("#mult");
 var divi = document.querySelector("#divi");
 var res = document.querySelector("#res");
+var anumber = Number(anumb.innerHTML);
 
 
 
-addn.addEventListener('click', addition);
 // subn.addEventListener('click', subtraction);
 // mult.addEventListener('click', multiply);
 // divi.addEventListener('click', division);        
 
 function addition()
 {
-    var anumber = parseInt(anumb.innerHTML)
+   
     // var ress = parseInt(anum.innerText) + parseInt(bnum.innerText);
     console.log(anumber)
     // document.getElementById("res").innerText = ress;
 }
+
+addn.addEventListener('click', addition);
